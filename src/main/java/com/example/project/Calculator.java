@@ -22,26 +22,30 @@ public class Calculator{
     // method that checks if num1 is evenly divisible by num2, and if so,
     // returns true, and if not, returns false
     public boolean divisibleBy(int num1, int num2) {
-        //implement code here
-        return false;
+        if (num1 % num2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     // method that constructs and returns a string representing a coordinate
     // pair in the format: "(x, y)"
     public String coordinatePair(int x, int y) {
         //implement code here
-        return "";
+        return "(" + x + ", " + y + ")";
     }
     // method that determines and returns the result of |num1 - num2|
     public int absoluteValue(int num1, int num2) {
-        //implement code here
-        return 0;
+        //implement code here //https://study.com/academy/lesson/video/java-absolute-value-method-examples.html
+        return Math.abs(num1 - num2);
     }
 
     //method that returns the average of two numbers. 
     //the number returned should be rounded to the nearest tenth
     public double average(int num1, int num2){
-        return 0;
+        double average = Math.round((num1 + num2)/2.0 * 100) / 100;
+        return average;
     }
     
     // method that constructs and returns a String in the format:
